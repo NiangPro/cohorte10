@@ -6,15 +6,39 @@
 	<title>Document</title>
 </head>
 <body>
-	<form>
-		<label for="">Prenom</label>
-		<input type="text" minlength="3" required placeholder="Veuillez saisir votre prenom"><br><br>
-		<label for="">Prix</label>
-		<input type="number" min="0" step="5">
+	<fieldset>
+		<legend>Formulaire d'inscription</legend>
+		<form>
+			<label for="prenom">Prenom</label>
+			<input type="text" id="prenom" minlength="3" required placeholder="Veuillez saisir votre prenom"><br><br>
+			<label for="">Prix</label>
+			<input type="number" min="0" step="0.1"> <br><br>
+			<label for="">Date de naissance</label>
+			<input type="datetime-local"><br><br>
+			<label for="">Image de profil</label>
+			<input type="file"><br><br>
+			<label for="">Sexe</label><br>
+			M <input type="radio" name="sexe">
+			F <input type="radio" name="sexe" checked><br><br>
+			<label for="">Couleur</label>
+			<input type="color"><br><br>
+			<label for="">Plage</label>
+			<input type="range"><br><br>
+			<label for="">Pays</label>
+			<select name="" id="">
+				<option value="">Veuillez selectionner votre pays</option>
+				<option value="">Sénégal</option>
+				<option value="">Guinee</option>
+				<option value="">Mali</option>
+				<option value="">Gambie</option>
+			</select><br><br>
+			<label for="">Mot de passe</label>
+			<input type="password">
 
-<br><br>
-		<input type="submit" value="Creer">
-		<button type="reset">Annuler</button>
-	</form>
+	        <br><br>
+			<input type="submit" value="Creer">
+			<button type="reset">Annuler</button>
+		</form>
+	</fieldset>
 </body>
 </html>
