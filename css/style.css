@@ -1,0 +1,8 @@
+*{
+	font-family: "Algerian";
+}
+a{
+	color: cyan;
+	border-bottom: 10px double red;
+	border-radius:0px 0px 20px 0px ;
+}
