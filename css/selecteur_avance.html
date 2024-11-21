@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		h1,#lien{
+			background: cyan;
+		}
+
+		div > p{
+			border: 10px solid #000;
+			color: brown;
+			border-radius: 25px 10px 5px 50px;
+		}
+
+		p+a{
+			text-decoration: none;
+		}
+
+		input[type="email"], input[type="password"]{
+			width: 500px;
+			outline: none;
+			padding: 5px;
+			border-width: 1px;
+			border-style: solid;
+			border-color: green;
+/*			border-top-left-radius: 15px;*/
+/*			border-bottom-right-radius: 15px;*/
+border-radius: 10px;
+		}
+
+		input[type="submit"]{
+			border: none;
+			background: green;
+			color: white;
+			padding: 8px;
+			border-radius: 5px;
+			cursor: pointer;
+			transition: 3s;
+
+		}
+
+		input[type="submit"]:hover{
+			background: lightgreen;
+			color: black;
+			padding: 15px;
+		}
+
+		#design{
+			width: 200px;
+			height: 70px;
+			text-align: center;
+			font-size: 30px;
+			margin: auto;
+			line-height: 70px;
+			box-shadow: 3px 3px 3px #ccc, -3px -3px 3px #ccc;
+			cursor: pointer;
+			transition: 3s ease-out;
+			border-right: 10px double cyan;
+			border-radius: 0px 25px 25px 0px;
+		}
+
+		#design:hover{
+			background: cyan;
+			color: white;
+			transform: rotate(-360deg);
+			border-right: 10px double white;
+
+
+		}
+	</style>
+</head>
+<body>
+	<div id="design">animation</div>
+	<div>
+		<h1>Lorem ipsum dolor sit amet, consectetur adipisicing.</h1>
+		<p>
+			Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Animi amet soluta ipsa quaerat, esse repellat architecto minus earum dolorum harum ea debitis nesciunt consequatur adipisci expedita labore reprehenderit sed recusandae!
+		</p>
+	</div>
+	<a href="" id="lien">Lorem ipsum dolor sit, amet.</a>
+	<p>
+		Lorem ipsum, dolor sit, amet consectetur adipisicing elit. Harum commodi vel cum?
+	</p>
+	<a href="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, quod!</a>
+	<form action="">
+		<label for="">Email</label><br>
+		<input type="email"><br><br>
+		<label for="">Mot de passe</label><br>
+		<input type="password"><br><br>
+		<input type="submit" value="Se connecter">
+	</form>
+</body>
+</html>
