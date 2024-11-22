@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		#custom{
+			width: 150px;
+			height: 50px;
+			text-transform: capitalize;
+			text-align: center;
+			color: yellow;
+			background: purple;
+			border-radius: 0px 25px 25px 0px;
+			border-right: 15px double yellow;
+			cursor: progress;
+		}
+
+		#custom:hover{
+			border-right: none;
+			transition: 5s;
+			transform: rotate(-45deg);
+			border-radius: 25px 0px 0px 25px;
+			border-left: 15px double yellow;
+		}
+
+		#para1{
+			color: purple;
+		}
+
+		h1{
+			color: red;
+		}
+
+		h1 span{
+			border: 10px solid cyan;
+		}
+
+		input[type="email"], input[type="password"]{
+			width: 400px;
+		}
+
+		input[type="submit"]{
+			border: none;
+			background: green;
+			color: white;
+			padding: 7px 6px;
+			border-radius: 25px;
+		}
+
+		input[type="submit"]:hover{
+			transition: 2s;
+			background: orange;
+		}
+	</style>
+</head>
+<body>
+	<div id="custom">personnalise</div>
+	<p id="para1">Lorem ipsum dolor sit amet consectetur, adipisicing, elit. Ipsam dolore alias maxime ullam, officia, vel est rem quos perspiciatis, sint aperiam pariatur accusamus libero a cum iusto debitis quaerat illum.</p>
+
+	<h1>mon titre <span>de niveau 1</span></h1>
+	<form action="">
+		<div>une section interne</div>
+		<label for="">Email</label><br>
+		<input type="email"><br>
+		<label for="">Mot de passe</label><br>
+		<input type="password" placeholder="********"><br><br>
+		<input type="submit" value="Se connecter">
+	</form>
+</body>
+</html>
