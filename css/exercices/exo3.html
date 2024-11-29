@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		h1{
+			color: blue;
+			font-family: Algerian;
+			text-decoration: underline;
+		}
+
+		#lien2{
+			text-decoration: none;
+			color: red;
+		}
+
+		input[type="text"]{
+			border-radius: 15px;
+			width: 300px;
+			outline: none;
+		}
+
+		button{
+			border-radius: 15px;
+			border: none;
+			color: white;
+		}
+
+		.btn-vert{
+			background: green;
+		}
+
+		.btn-rouge{
+			background: red;
+		}
+	</style>
+</head>
+<body>
+	
+	<h1>introduction</h1>
+	<p>Lorem ipsum dolor sit, amet consectetur adipisicing. <a href="">Je suis le lien numero 1</a></p>
+	<h1>Developpement</h1>
+	<p><a href="" id="lien2">Je suis le lien numero 2</a> Lorem ipsum dolor, sit amet consectetur, adipisicing elit. Voluptatem, ab!</p>
+	<h1>Conclusion</h1>
+	<p>
+		<a href="">Je suis le lien numero 3</a>
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam impedit vero error, adipisci voluptas cumque sequi possimus magnam culpa magni!
+	</p>
+
+	<form action="">
+		<label for="">Prenom</label><br>
+		<input type="text"><br>
+		<label for="">Nom</label><br>
+		<input type="text" pattern="[a-zA-Z]*" required><br>
+		<label for="">Sexe</label><br>
+		M <input type="radio" checked>
+		F <input type="radio" checked> <br>
+		<button type="submit" class="btn-vert">Envoyer</button>
+		<button type="reset" class="btn-rouge">Annuler</button>
+	</form>
+</body>
+</html>
