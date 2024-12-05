@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body{
+			margin: 0px;
+			color: darkgreen;
+
+		}
+		header{
+			text-align: center;
+			height: 70px;
+			border: 1px solid #000;
+			line-height: 60px;
+			background: sandybrown;
+		}
+
+		nav, #content{
+			display: inline-block;
+			margin-top: 10px;
+		}
+
+		nav{
+			width: 20%;
+			height: 100px;
+			border: 1px solid #000;
+			background: lightblue;
+			transform: translateY(-260px);
+		}
+
+		#content{
+			width: 79%;
+			height: 420px;
+			margin-left: 5px;
+		}
+
+		#section1{
+			border: 1px solid #000;
+			background: grey;
+			margin-bottom: 10px;
+			height: 250px;
+		}
+
+		#section2{
+			background: grey;
+			border: 1px solid #000;
+			height: 150px;
+		}
+
+		article, #twoasides{
+			display: inline-block;
+			margin-top: 10px;
+		}
+
+		#twoasides{
+			border: 1px solid #000;
+			height: 200px;
+			width: 20%;
+		}
+
+		#aside1{
+			margin-bottom: 10px;
+		}
+
+		#twoasides aside{
+			border: 1px solid #000;
+			height: 49%;
+		}
+		aside{
+			background: lightpink;
+		}
+
+		article{
+			width: 78%;
+			height: 210px;
+			border: 1px solid #000;
+			background: lightblue;
+			transform: translateY(-110px);
+		}
+
+		#section2 aside{
+			width: 200px;
+			height: 90px;
+			border: 1px solid #000;
+			float: right;
+			transform: translateY(40px);
+		}
+
+		footer{
+			height: 50px;
+			border: 1px solid #000;
+			margin-top: 10px;
+			text-align: center;
+			background: lightgreen;
+		}
+	</style>
+</head>
+<body>
+	<header>header</header>
+	<nav>nav</nav>
+	<div id="content">
+		<section id="section1">
+		  section <br>
+		  <article>article</article>
+		  <div id="twoasides">
+			<aside id="aside1">aside</aside>
+			<aside>aside</aside>
+		  </div>
+	   </section>
+
+	   <section id="section2">
+	   	section 
+	   	<aside>aside</aside>
+	   </section>
+	</div>
+	<footer>footer</footer>
+	
+</body>
+</html>
