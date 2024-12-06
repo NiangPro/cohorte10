@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+
+		body{
+			background: linear-gradient(to right, orange, #e91e63, purple);
+		}
+		.cards{
+			width: 880px;
+			height: 350px;
+			margin: auto;
+			transform: translateY(25%);
+		}
+
+		.card{
+			width: 250px;
+			height: inherit;
+			border-radius: 10px;
+			box-shadow: 1px 1px 10px grey;
+			display: inline-block;
+			margin-right: 40px;
+			background: white;
+		}
+
+		.card .card-header{
+			width: inherit;
+			height: 40%;
+			border-radius: 10px 10px 50% 50%;
+			text-align: center;
+			line-height: 130px;
+			font-size: 60px;
+			font-family: Arial;
+			font-weight: bold;
+			color: white;
+		}
+
+		.card .card-body{
+			width: inherit;
+			height: 59%;
+			text-align: center;
+			padding: 20px 10px;
+			box-sizing: border-box;
+			border-radius: 0px 0px 10px 10px;
+		}
+
+		.card .card-body button{
+			display: block;
+			margin: auto;
+			margin-top: 20px;
+			border-radius: 15px;
+			padding: 8px 10px;
+			border: none;
+			color: white;
+		}
+
+		.bg-orange{
+			background: orange;
+		}
+
+		.bg-rose{
+			background: #e91e63;
+		}
+
+		.bg-violet{
+			background: purple;
+		}
+	</style>
+</head>
+<body>
+	<div class="cards">
+		<div class="card">
+			<div class="card-header bg-orange">1</div>
+			<div class="card-body">
+				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis itaque unde accusantium. Laborum illum dignissimos vel ut aut reiciendis nisi incidunt velit, voluptatum fugit
+				<button class="bg-orange">Read more</button>
+			</div>
+		</div>
+
+		<div class="card">
+			<div class="card-header bg-rose">2</div>
+			<div class="card-body">
+				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis itaque unde accusantium. Laborum illum dignissimos vel ut aut reiciendis nisi incidunt velit, voluptatum fugit
+				<button class="bg-rose">Read more</button>
+			</div>
+		</div>  
+
+		<div class="card">
+			<div class="card-header bg-violet">3</div>
+			<div class="card-body">
+				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis itaque unde accusantium. Laborum illum dignissimos vel ut aut reiciendis nisi incidunt velit, voluptatum fugit
+				<button class="bg-violet">Read more</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
