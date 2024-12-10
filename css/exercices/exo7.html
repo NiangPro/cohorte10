@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background: rgb(1, 179, 179);
+        }
+        #global{
+            width: 700px;
+            height: 420px;
+            margin: auto;
+            transform: translateY(15%);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            box-shadow: 1px 1px 10px grey;
+        }
+
+        #gauche{
+            height: inherit;
+            width: 350px;
+        }
+
+        #droite{
+            height: inherit;
+            width: 350px;
+            background: rgb(1, 23, 74);
+        }
+
+        #gauche .cadre{
+            border: 5px solid white;
+            width: 75%;
+            margin: auto;
+            text-align: center;
+            padding: 0px 10px;
+            box-sizing: border-box;
+            color: white;
+            transform: translateY(90%);
+        }
+
+        #droite .btn-group{
+            float: right;
+            margin: 20px 20px 10px 0px;
+        }
+
+        .btn-group .login{
+            color: white;
+            background: rgb(1, 179, 179);
+            border: none;
+            padding: 4px 10px;
+            border-radius: 15px 0px 0px 15px;
+            cursor: pointer;
+        }
+
+        .btn-group .register{
+            color: white;
+            background:grey;
+            border: none;
+            padding: 4px 10px;
+            border-radius: 0px 15px  15px 0px;
+            cursor: pointer;
+        }
+
+        #droite form{
+            transform: translateY(60px);
+            width: 75%;
+            margin: auto;
+            color: white;
+            padding: 10px;
+            background: rgb(6, 36, 106);
+        }
+
+        form .logo{
+            width: 50px;
+            font-size: 30px;
+            font-weight: bold;
+            transform: translateX(90px);
+        }
+
+        form p{
+            text-align: center;
+            transform: translateX(55px);
+            opacity: .6;
+
+        }
+
+        form input{
+            display: block;
+            width: 95%;
+            height: 25px;
+            margin-bottom: 10px;
+            outline: none;
+        }
+
+        form .forget{
+            text-align: right;
+        }
+
+        form .forget a{
+            text-decoration: none;
+            color: white;
+            opacity: .6;
+        }
+
+        form button{
+            display: block;
+            width: 100%;
+            margin-top: 20px;
+            height: 25px;
+            background: rgb(1, 179, 179);
+            border: none;
+            color: white;
+            border-radius: 5px;
+        }
+
+        form .images{
+            text-align: center;
+        }
+
+        form .images img{
+            width: 30px;
+            height: 30px;
+        }
+        form .tiret{
+            border: 1px solid white;
+            margin-top: 20px;
+        }
+
+        form span{
+            display: block;
+            width: 30px;
+            text-align: center;
+            margin: auto;
+            margin-top: -10px;
+            background: rgb(6, 36, 106);
+
+        }
+
+        #droite .author{
+            color: white;
+            transform: translateY(60px);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="global">
+        <div id="gauche">
+            <div class="cadre">
+                <h4>WELCOME TO LOGO</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, expedita similique.</p>
+            </div>
+        </div>
+        <div id="droite">
+            <div class="btn-group">
+                <button class="login">Login</button>
+                <button class="register">Register</button>
+            </div>
+            <form action="">
+                <div class="logo">LOGO</div>
+                <p>Sign into your account</p>
+                <input type="email" placeholder="EMAIL ADDRESS">
+                <input type="password" placeholder="PASSWORD">
+                <div class="forget"><a href="">Forget your password</a></div>
+                <button type="submit">Login</button>
+                <div class="tiret"></div>
+                <span>Or</span>
+                <div class="images">
+                    <img src="../../images/facebook.png" alt="">
+                    <img src="../../images/twitter.png" alt="">
+                    <img src="../../images/google.png" alt="">
+                    <img src="../../images/linkedin.png" alt="">
+                </div>
+            </form>
+            <p class="author">Developed by Cohorte 10</p>
+        </div>
+    </div>
+</body>
+</html>
