@@ -1,11 +1,82 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-</head>
-<body>
-	
-</body>
-</html>
+// ==UserScript==
+// @name         NiangPro
+// @namespace    http://tampermonkey.net/
+// @version      2024-01-30
+// @description  try to take over the world!
+// @author       You
+// @match        *://*.blsitalyvisa.com/*
+// @icon         https://www.google.com/s2/favicons?sz=64&domain=blsitalyvisa.com
+// @grant        none
+// ==/UserScript==
+
+(function () {
+  "use strict";
+
+  var inputFirstName = document.querySelector(
+    'input[name="valApplicant[1][first_name]"]'
+  );
+  var inputLastName = document.querySelector(
+    'input[name="valApplicant[1][last_name]"]'
+  );
+  var inputPassport = document.querySelector(
+    'input[name="valApplicant[1][passport_number]"]'
+  );
+
+    // Récupérer le bouton par son ID
+     var bookNowButton = document.getElementById("valBookNow");
+
+
+  inputFirstName.value = "BABACAR";
+  inputLastName.value = "NDIAYE";
+  inputPassport.value = "A03518893";
+
+// Récupérer les champs
+let imageField = document.getElementById("Imageid");
+let captchaField = document.getElementById("captcha_code_reg");
+    function getRandomDate(dates) {
+      var randomIndex = Math.floor(Math.random() * dates.length);
+      return dates[randomIndex];
+  }
+
+
+let clear = setInterval(function(){
+  if(captchaField.value){
+      let captchaFields = document.querySelectorAll("#captcha_code_reg");
+
+      // Vérifier s'il y a au moins deux éléments
+      if (captchaFields.length >= 2) {
+          // Sélectionner le deuxième élément
+          let secondCaptchaField = captchaFields[1];
+          if(!secondCaptchaField.value){
+             secondCaptchaField.value = captchaField.value;
+              
+
+          }
+
+      }
+
+                
+
+
+                  var dateap = document.querySelector("#valAppointmentDate");
+
+                  // Vérifier si le bouton existe
+                  if (dateap.value) {
+                      // Simuler un clic sur le bouton 4s apres avoir selectionner une date
+                     
+                      setTimeout(function(){
+                          bookNowButton.click();
+                           clearInterval(clear);
+
+
+                      },4000);
+              
+
+                  }
+
+  }
+}, 100)
+
+
+})();
+

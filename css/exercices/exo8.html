@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            padding-top: 70px;
+            column-gap: 30px;
+        }
+
+        .card{
+            width: 250px;
+            height: 400px;
+            box-shadow: 2px 2px 28px black, 0px -1px 10px #ffc107;
+            border-radius: 5px;
+        }
+
+        .card2{
+            height: 480px;
+            margin-top: -40px;
+            box-shadow: 0px 8px 28px black, 0px -1px 2px green;
+        }
+
+        .bg-jaune{
+            background: #ffc107;
+        }
+
+        .bg-vert{
+            background: green;
+        }
+
+        .bg-rouge{
+            background: red;
+        }
+
+        .card-header{
+            height: 40%;
+            width: inherit;
+            border-radius: 5px 5px 0px 0px;
+        }
+
+        .card-header img{
+            width: 100%;
+            height: 100%;
+            border-radius: 5px 5px 0px 0px;
+        }
+        .card-body{
+            width: inherit;
+            height: 50%;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .card-footer{
+            width: inherit;
+            height: 10%;
+            border-radius: 0px 0px 7px 5px;
+            display: flex;
+            justify-content: space-around;
+            
+        }
+
+        .card-footer img{
+            border-right: 3px solid rgba(255, 255, 255, .5);
+            width: 25%;
+        }
+
+        .icon{
+            border-right: 0px!important;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="card">
+        <div class="card-header">
+            <img src="../../images/card1.jpg" alt="">
+        </div>
+        <div class="card-body">
+            <h1>Silver</h1>
+            <p>Lorem ipsum dolor, sit 
+                amet consectetur adipisicing elit. Sit, vitae! Lorem, ipsum.</p>
+        </div>
+        <div class="card-footer bg-jaune">
+            <img src="../../images/Entypo_f30c(0)_32.png" alt="">
+            <img src="../../images/Entypo_f309(0)_32.png" >
+            <img src="../../images/FontAwesome_f16a(0)_32.png" alt="">
+            <img src="../../images/Entypo_f318(0)_32.png" class="icon" alt="">
+        </div>
+    </div>
+
+    <div class="card card2">
+        <div class="card-header">
+            <img src="../../images/card2.jpg" alt="">
+        </div>
+        <div class="card-body">
+            <h1>Silver</h1>
+            <p>Lorem ipsum dolor, sit 
+                amet consectetur adipisicing elit. Sit, vitae! Lorem, ipsum.</p>
+        </div>
+        <div class="card-footer bg-vert">
+            <img src="../../images/Entypo_f30c(0)_32.png" alt="">
+            <img src="../../images/Entypo_f309(0)_32.png" >
+            <img src="../../images/FontAwesome_f16a(0)_32.png" alt="">
+            <img src="../../images/Entypo_f318(0)_32.png" class="icon" alt="">
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <img src="../../images/card3.jpg" alt="">
+        </div>
+        <div class="card-body">
+            <h1>Silver</h1>
+            <p>Lorem ipsum dolor, sit 
+                amet consectetur adipisicing elit. Sit, vitae! Lorem, ipsum.</p>
+        </div>
+        <div class="card-footer bg-rouge">
+            <img src="../../images/Entypo_f30c(0)_32.png" alt="">
+            <img src="../../images/Entypo_f309(0)_32.png" >
+            <img src="../../images/FontAwesome_f16a(0)_32.png" alt="">
+            <img src="../../images/Entypo_f318(0)_32.png" class="icon" alt="">
+        </div>
+    </div>
+</body>
+</html>
