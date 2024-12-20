@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --bleu: rgb(167, 110, 4);
+            
+        }
+        body{
+            background: var(--bleu);
+        }
+        nav{
+            border: 1px solid #000;
+            display: flex;
+            justify-content: space-around;
+            width: 80%;
+            margin: auto;
+            margin-top: 40px;
+            background: #000;
+            height: 50px;
+            box-shadow: -2px -2px 4px white, 2px 0px 4px white;
+            color: white;
+            line-height: 50px;
+        }
+
+        .logo{
+            font-size: 30px;
+            text-shadow: 2px  2px 7px white;
+        }
+
+        .menu{
+            display: flex;
+            list-style-type: none;
+            column-gap: 40px;
+            line-height: -20px;
+            margin-top: 10px;
+        }
+
+        .menu li{
+            position: relative;
+            text-align: center;
+            height: 30px;
+            width: 100px;
+            line-height: 30px;
+        }
+
+        .menu li:hover{
+            background: var(--bleu);
+        }
+
+        .menu li:hover ul{
+           /* visibility: visible; */
+           display: flex;
+        }
+
+        .menu li a{
+            color: white;
+        }
+
+        .menu li ul{
+            background: white;
+            display: none;
+            flex-direction: column;
+            list-style-type: none;
+             /* visibility: hidden; */
+        }
+
+        .menu li ul li{
+            transform: translateX(-40px);
+        }
+
+        .menu li ul li a{
+            color: black;
+        }
+
+        a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Cohorte 10</div>
+        <ul class="menu">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li>
+                <a href="">Gallery</a>
+                <ul>
+                    <li><a href="">2019</a></li>
+                    <li><a href="">2018</a></li>
+                    <li><a href="">2017</a></li>
+                </ul>
+            </li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Others</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
